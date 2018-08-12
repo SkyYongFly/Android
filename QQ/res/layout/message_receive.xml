@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:layout_margin="10dp">
+    
+    <!-- 發送消息的列表項 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+        android:id="@+id/iv_receive_show_photo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dp"
+        android:src="@drawable/f6" />
+        
+        <TextView
+            android:id="@+id/tv_receive_message"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/incoming"
+            android:text="消息内容"
+            android:textColor="#110000"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    
+
+</RelativeLayout>

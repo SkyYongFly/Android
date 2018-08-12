@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">匿名</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="phone">phoneNum</string>
+    <string name="buttonLogin">getCode</string>
+    <string name="phoneCode">please input the code</string>
+    <string name="buttonCode">login</string>
+    <string name="NULL_PHONE_NUMBER">the phone number is null</string>
+    <string name="LOGIN_FAIL">sorry,login has failed</string>
+    <string name="LOGIN_SUCCESS">login is successed</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="horizontal" >
+    
+    <!-- 显示彩种的标志 -->
+
+    <ImageView
+        android:id="@+id/iv_show_sign"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/id_ssq" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp" >
+
+        <TextView
+            android:id="@+id/tv_show_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="本期彩票"
+            android:singleLine="true"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_show_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="数据加载中"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" 
+            android:singleLine="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/iv_betting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/id_betting" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

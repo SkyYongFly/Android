@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <EditText
+        android:id="@+id/et_phoneNum"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="@string/phone"
+        android:layout_gravity="center_horizontal"/>
+    
+    <Button
+        android:id="@+id/bt_getCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonLogin"
+        android:layout_gravity="center_horizontal"
+        android:onClick="getCode"/>
+    
+    <EditText
+        android:id="@+id/et_phoneCode"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="@string/phoneCode"
+        android:layout_gravity="center_horizontal"/>
+    
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonCode"
+        android:layout_gravity="center_horizontal"
+        android:onClick="LOGIN"/>
+    
+
+</LinearLayout>

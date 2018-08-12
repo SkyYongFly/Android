@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BluetoothControl</string>
+    <string name="forward">前进</string>
+    <string name="back">后退</string>
+    <string name="left">左转</string>
+    <string name="right">右转</string>
+    <string name="stop">暂停</string>
+</resources>

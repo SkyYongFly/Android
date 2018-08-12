@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- 普通状态下的标题布局 -->
+    <LinearLayout
+        android:id="@+id/ll_title_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/id_title_bg"
+        android:layout_alignParentTop="true">
+   	     
+        <ImageView
+            android:id="@+id/bt_title_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/id_title_goback"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"/>
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_weight="100"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:gravity="center"/>
+         <ImageView
+            android:id="@+id/bt_title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/id_title_help"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"/>
+        
+        </LinearLayout>
+        
+    <!-- 未登陆状态下的标题布局 -->
+    <LinearLayout
+        android:id="@+id/ll_title_no_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/id_title_bg"
+        android:layout_alignParentTop="true">
+         
+        <LinearLayout
+            android:layout_weight="100"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/id_cmc_logo"
+                android:layout_gravity="center_vertical"
+            	android:layout_marginLeft="10dp"/>
+            
+            </LinearLayout>
+   	     
+        <ImageView
+            android:id="@+id/iv_title_login"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/id_purchase_login"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"/>
+         <ImageView
+            android:id="@+id/iv_title_rigist"
+             android:focusable="true"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/id_purchase_regist"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"/>
+        
+        </LinearLayout>
+        
+    <!-- 登陆成功状态下的标题布局 -->
+    <LinearLayout
+        android:id="@+id/ll_title_has_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/id_title_bg"
+        android:layout_alignParentTop="true">
+         
+        <LinearLayout
+            android:layout_weight="100"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/id_cmc_logo"
+                android:layout_gravity="center_vertical"
+            	android:layout_marginLeft="10dp"/>
+            
+            </LinearLayout>
+           
+         <TextView 
+            android:layout_width="0dp"
+            android:layout_weight="100"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:gravity="center"/>
+   	     
+         <Button
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/id_purchase_system_info"/>
+        
+        </LinearLayout>
+
+</RelativeLayout>

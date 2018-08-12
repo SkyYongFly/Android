@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Bluetooth</string>
+    <string name="on">开启</string>
+    <string name="visible">可见</string>
+    <string name="list">列表</string>
+    <string name="off">关闭</string>
+</resources>

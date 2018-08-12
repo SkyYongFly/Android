@@ -1,0 +1,36 @@
+package com.example.util;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.xmlpull.v1.XmlSerializer;
+
+/**
+ * XML body部分中elements部分中element节点
+ * 
+ * @author yzas
+ *
+ */
+public class XmlElement {
+	private List<XmlTag> list = new ArrayList<XmlTag>();
+
+	public void addElementTag(XmlTag xmlTag) {
+		list.add(xmlTag);
+	}
+
+	// 序列化element节点
+	public void serializerElement(XmlSerializer serializer) {
+		try {
+			serializer.startTag(null, "element");
+
+			for (XmlTag tag : list) {
+				tag.serializerTag(serializer);
+			}
+			
+			serializer.endTag(null, "element");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}

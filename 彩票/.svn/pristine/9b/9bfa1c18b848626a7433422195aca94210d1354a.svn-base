@@ -1,0 +1,79 @@
+package com.example.util;
+
+import java.text.DecimalFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Random;
+
+import org.apache.commons.codec.digest.DigestUtils;
+import org.xmlpull.v1.XmlSerializer;
+
+import com.example.daomain.Config;
+
+/**
+ * 处理XML文件的消息体中的头消息部分
+ * 
+ * @author yzas
+ *
+ */
+public class XmlHeader {
+	// 消息编号
+	private XmlTag messagerid = new XmlTag(Config.messagerid);
+	// 时间片
+	private XmlTag timestamp = new XmlTag(Config.timestamp);
+	// 交易类型
+	private XmlTag transactiontype = new XmlTag(Config.transactiontype);
+	// 代理商的编号
+	private XmlTag agenteridid = new XmlTag(Config.agenteridid, Config.AGENTERID);
+	// 用户账户
+	private XmlTag username = new XmlTag(Config.username);
+	// 对消息包的摘要，摘要算法为md5，摘要内容为（时间戳+代理密码+消息体）
+	private XmlTag digest = new XmlTag(Config.digest);
+	// 用户操作终端来源，如：ivr,sms,web
+	private XmlTag source = new XmlTag(Config.source);
+	// 加密标签
+	private XmlTag compress = new XmlTag(Config.compress, Config.COMPRESS);
+
+	/**
+	 * 序列化头节点部分
+	 * 
+	 * @param serializer
+	 */
+	public void serializerHeader(XmlSerializer serializer, String body) {
+		// 设置时间片
+		SimpleDateFormat format = new SimpleDateFormat("yyMMddhhmmss");// 时间片格式
+		String date = format.format(new Date());
+		timestamp.setTagValue(date);
+
+		// 设置messagerid
+		Random random = new Random();
+		int num = random.nextInt(999999) + 1;// 取值范围[0,999999) 变成 [1,999999]
+		DecimalFormat decimalFormat = new DecimalFormat("000000");// 设定格式为6位
+		messagerid.setTagValue(date + decimalFormat.format(num));
+
+		// digest:时间戳+代理商的密码+完整的body（明文）
+		String digestStr = date + Config.AGENTER_PASSWORD + body;
+		String digStr = DigestUtils.md5Hex(digestStr);// md5加密
+		digest.setTagValue(digStr);
+
+		try {
+			serializer.startTag(null, "header");
+			
+			//依次序列化节点
+			messagerid.serializerTag(serializer);
+			timestamp.serializerTag(serializer);
+			transactiontype.serializerTag(serializer);
+			agenteridid.serializerTag(serializer);
+			username.serializerTag(serializer);
+			digest.serializerTag(serializer);
+			source.serializerTag(serializer);
+			compress.serializerTag(serializer);
+			
+			serializer.endTag(null, "header");
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+}

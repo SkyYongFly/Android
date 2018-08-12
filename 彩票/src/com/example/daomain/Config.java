@@ -1,0 +1,51 @@
+package com.example.daomain;
+
+/**
+ * 工程的配置相关文件
+ * @author yzas
+ *
+ */
+public class Config {
+	//服务器地址
+	public static final String URI = "http://10.50.13.134:8080/lottery.xml";
+	//编码格式
+	public static String CHARSET  = "UTF-8";
+	//代理商的编号（具体数值）
+	public static String AGENTERID="889931";
+	//子代理商的密钥（具体数值）
+	public static String AGENTER_PASSWORD = "9ab62a694d8bf6ced1fab6acd48d02f8";
+	//加密用的标签：使用什么方式加密（具体数值）
+	public static String COMPRESS = "DES";
+	
+	//消息编号
+	public static String messagerid = "messagerid";
+	//时间片
+	public static String timestamp = "timestamp";
+	//交易类型
+	public static String transactiontype = "transactiontype";
+	//代理商的编号
+	public static String agenteridid = "agenteridid";
+	//用户账户
+	public static String username = "username";
+	//对消息包的摘要，摘要算法为md5，摘要内容为（时间戳+代理密码+消息体）
+	public static String digest = "digest";
+	//用户操作终端来源，如：ivr,sms,web
+	public static String source = "source";
+	//加密用的标签：使用什么方式加密
+	public static String compress = "compress";
+	
+	//彩票的种类
+	public static String lotteryid = "lotteryid";
+	
+	//移动网络的wap 方式的代理ip和端口
+	public static String PROXY;
+	public static int PORT;
+	
+	//des加密用密钥
+	public static String DES_PASSWORD = "9b2648fcdfbad80f";
+	
+	//双色球选号界面
+	public static int VIEW_SSQ=15;
+	
+
+}

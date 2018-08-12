@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="100">
+
+    <TextView
+        android:id="@+id/tv_showCacheText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="缓存应用"
+        android:singleLine="true"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/tv_showCacheS"
+            android:layout_weight="100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="缓存应用"
+            android:singleLine="true"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_deleteCache"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/delete"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:clickable="true"/>
+</LinearLayout>

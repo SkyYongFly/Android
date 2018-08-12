@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/safe"
+        />
+
+    <TextView
+        android:id="@+id/tv_funtion"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:textColor="#ff370010"
+        android:text="手机防盗"
+        android:gravity="center"
+        android:layout_below="@+id/iv_icon"
+        android:layout_alignLeft="@+id/iv_icon"
+        android:layout_alignStart="@+id/iv_icon" />
+
+</RelativeLayout>

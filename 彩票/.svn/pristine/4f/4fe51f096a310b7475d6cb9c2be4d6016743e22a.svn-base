@@ -1,0 +1,59 @@
+package com.example;
+
+import java.util.LinkedList;
+
+import com.example.view.BaseView;
+import com.example.view.ViewControl;
+
+import android.app.Activity;
+import android.app.usage.UsageEvents.Event;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.KeyEvent;
+import android.widget.Toast;
+
+public class MainActivity extends Activity {
+
+	private static final String TAG = "test";
+	private ViewControl viewControl;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+
+		viewControl = new ViewControl(MainActivity.this);
+		viewControl.showStart();
+	}
+
+	
+	/**
+	 * 处理回退键
+	 */
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		switch (keyCode) {
+		case KeyEvent.KEYCODE_BACK: {// 按下返回键
+			LinkedList<Class<? extends BaseView> > historyList = viewControl.getHistoryList();
+			Log.d(TAG, "list大小"+historyList.size());
+			if(historyList.size() == 1){
+				Toast.makeText(MainActivity.this,"您确定要退出吗",Toast.LENGTH_SHORT).show();
+				viewControl.clearHistoryList();
+			}else{
+				//viewControl.removeFirst();
+				//historyList.removeFirst();
+//				viewControl.backUI(historyList.getFirst());
+				viewControl.backUI();
+				return  false;
+			}
+			
+			
+		}
+			break;
+
+		default:
+			break;
+		}
+		return super.onKeyDown(keyCode, event);
+	}
+}

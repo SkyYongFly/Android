@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mobilesafe.mobilesafe.BlackNumber"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff11ff98"
+        android:orientation="horizontal"
+        android:weightSum="1">
+    <TextView
+        android:id="@+id/tv_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="黑名单拦截"
+        android:textColor="#ff3527ff"
+        android:textSize="27sp"
+        android:layout_weight="0.95"
+        />
+
+        <Button
+            android:id="@+id/bt_addBlackNumber"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:text="添加"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:layout_weight="0.05"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#4393f5"
+            android:onClick="addNumber"/>
+
+        </LinearLayout>
+
+    <ListView
+        android:id="@+id/lt_showNumber"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

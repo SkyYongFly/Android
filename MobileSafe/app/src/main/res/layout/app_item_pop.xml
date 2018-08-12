@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="140dp"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:background="@drawable/app_popwindow_background">
+
+    <LinearLayout
+        android:id="@+id/ll_startApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/start"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打开应用"
+            android:textSize="8sp"
+            android:layout_marginTop="3dp"
+            android:textColor="#e6055f"/>
+
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_deleteApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="8dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/delete"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="卸载应用"
+            android:textSize="8sp"
+            android:layout_marginTop="3dp"
+            android:textColor="#e6055f"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_shareApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/share"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分享应用"
+            android:textSize="8sp"
+            android:layout_marginTop="3dp"
+            android:textColor="#e6055f"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

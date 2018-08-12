@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_redTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/id_ssq_red_title" >
+
+                <Button
+                    android:id="@+id/bt_redRandom"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="8dp"
+                    android:background="#E6EBEA"
+                    android:text="机选红球"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+            
+            <GridView
+                android:id="@+id/gv_red"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:columnWidth="35dp"
+                 android:layout_margin="5dp"
+                android:numColumns="auto_fit"/>
+            
+             <RelativeLayout
+                android:id="@+id/rl_blueTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/id_ssq_blue_title" >
+
+                <Button
+                    android:id="@+id/bt_blueRandom"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="8dp"
+                    android:background="#E6EBEA"
+                    android:text="机选蓝球"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+            
+            <GridView
+                android:id="@+id/gv_blue"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:columnWidth="35dp"
+                
+                android:layout_margin="5dp"
+                
+                android:numColumns="auto_fit"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

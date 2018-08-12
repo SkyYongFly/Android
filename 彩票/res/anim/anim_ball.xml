@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 当小球被选中的时候左右晃动 ,运动的轨迹为正弦曲线-->
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="120"
+    android:fromXDelta="0"
+    android:toXDelta="5"
+    android:repeatCount="3"
+    android:interpolator="@android:anim/cycle_interpolator">
+    
+
+</translate>

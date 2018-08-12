@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+     <!-- 普通底部布局 -->
+    <LinearLayout
+        android:id="@+id/ll_bottom_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ff0000"
+        android:layout_alignParentBottom="true">
+        
+        <ImageView 
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:clickable="true"
+            android:src="@drawable/id_lottery_home"
+            android:layout_margin="5dp"/>
+         <ImageView 
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:clickable="true"
+            android:src="@drawable/id_lottery_hall"
+            android:layout_margin="5dp"/>
+          <ImageView 
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:clickable="true"
+            android:src="@drawable/id_lottery_recharge"
+            android:layout_margin="5dp"/>
+           <ImageView 
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:clickable="true"
+            android:src="@drawable/id_lottery_myself"
+            android:layout_margin="5dp"/>
+        
+        </LinearLayout>
+     
+    
+    <!-- 选号的底部布局 -->
+    <LinearLayout 
+        android:id="@+id/ll_bottom_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ff0000"
+        android:layout_alignParentBottom="true">
+           
+        <ImageView
+            android:id="@+id/id_clear_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:clickable="true"
+            android:src="@drawable/id_clear_choose"
+             android:layout_margin="5dp"/>
+        <TextView 
+            android:id="@+id/tv_button_show"
+            android:layout_weight="100"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"/>
+        <ImageView
+            android:id="@+id/id_choose_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:clickable="true"
+            android:src="@drawable/id_choose_ok"
+            android:layout_margin="5dp"/>
+        
+        
+        
+        
+        
+        </LinearLayout>
+    
+
+</RelativeLayout>

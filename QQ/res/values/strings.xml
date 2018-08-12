@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">QQ</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="phoneNum">please input your phone number</string>
+    <string name="confirmPassword">please confirm your phone number</string>
+    <string name="password">please input your password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="tv_shouldRegister">has not registered?</string>
+    <string name="tv_shouldLogin">has registered?</string>
+    <string name="NULL_LOGIN_PASSWORD">phone or password is null</string>
+    <string name="NO_EFFECT_PHONE_NUM">no effect phoneNum ,do you have register?</string>
+    <string name="NO_EFFECT_PASSWORD">password is wrong</string>
+    <string name="NO_DATA_BACK">there is no data back</string>
+    <string name="SUCCESS">success login</string>
+    <string name="FAIL">something wrong</string>
+    <string name="title_activity_refister">RefisterActivity</string>
+    <string name="PASSWORD_NO_SAME">the  twice password is not same </string>
+    <string name="REGIST_SUCCESS">regist success</string>
+    <string name="PHONE_NUM_HAS_EXISTS">the phone number has registed</string>
+    <string name="REGIST_FAIL">regist failed</string>
+
+    <!-- home -->
+    <string name="tv_home_title1">消息</string>
+    <string name="tv_home_title2">联系人</string>
+    <string name="tv_home_title2_add">添加</string>
+    <string name="tv_home_title3">动态</string>
+    <string name="tv_home_title3_more">更多</string>
+    <string name="tv_home_bottom1">消息</string>
+    <string name="tv_home_bottom2">联系人</string>
+    <string name="tv_home_bottom3">动态</string>
+    <string name="title_activity_home_second">HomeSecondActivity</string>
+    <string name="title_activity_home_third">HomeThirdActivity</string>
+    <string name="add_friends">添加</string>
+    <string name="tv_my_friends">我的好友</string>
+    <string name="new_friends">新朋友</string>
+    <string name="most_focus">特别关心</string>
+    <string name="groups">群组</string>
+    <string name="public_list">公众号</string>
+    <string name="title_activity_search_friend">SearchFriend</string>
+
+    <!-- 查找好友 -->
+    <string name="search_friend">请输入要添加的好友手机号</string>
+    <string name="add_friend">添加好友</string>
+    <string name="search">查找</string>
+    <string name="title_activity_add_user">AddUser</string>
+    <string name="user_info">账号信息</string>
+    <string name="user_nickname">用戶昵称</string>
+    <string name="user_sign">个性签名</string>
+    <string name="add_friend_now">添加该好友</string>
+    <string name="title_activity_response_add_friend">ResponseAddFriend</string>
+    <string name="agree">同意</string>
+    <string name="disagree">拒绝</string>
+    <string name="title_activity_chat">ChatActivity</string>
+
+</resources>

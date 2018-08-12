@@ -1,0 +1,63 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="text_fd_set1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginLeft">1dp</item>
+        <item name="android:textColor">#ff360c6c</item>
+
+    </style>
+
+    <style name="button_next">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:background">@drawable/function_greenbutton</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:drawableRight">@drawable/next</item>
+
+    </style>
+
+    <style name="button_pre">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:background">@drawable/function_greenbutton</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:drawableLeft">@drawable/previous</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="widget_text">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+
+    <!--自定义的进度条样式-->
+    <style name="my_pb_style" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal</item>
+    </style>
+</resources>

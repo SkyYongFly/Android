@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:hint="号码"/>
+    
+    <ImageView 
+        android:id="@+id/iv_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/down_arrow"
+        android:layout_alignRight="@id/et_phone"
+        android:layout_alignTop="@id/et_phone"
+        android:clickable="true" android:focusable="true"
+        android:onClick="down"/>
+    
+    
+
+
+</RelativeLayout>

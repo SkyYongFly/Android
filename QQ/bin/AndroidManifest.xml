@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.qq"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name=".RefisterActivity"
+            android:label="@string/title_activity_refister" >
+        </activity>
+        <activity
+            android:name=".HomeSecondActivity"
+            android:label="@string/title_activity_home_second" >
+        </activity>
+        <activity
+            android:name=".HomeThirdActivity"
+            android:label="@string/title_activity_home_third" >
+        </activity>
+        <activity
+            android:name=".SearchFriend"
+            android:label="@string/title_activity_search_friend" >
+        </activity>
+        <activity
+            android:name=".AddUser"
+            android:label="@string/title_activity_add_user" >
+        </activity>
+
+        <service android:name="com.example.service.MainService" >
+        </service>
+
+        <activity
+            android:name=".ResponseAddFriend"
+            android:label="@string/title_activity_response_add_friend" >
+        </activity>
+        <activity
+            android:name=".ChatActivity"
+            android:label="@string/title_activity_chat" >
+        </activity>
+    </application>
+
+</manifest>

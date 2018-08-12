@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mobilesafe.mobilesafe.SystemOptimize"
+    android:background="#e9cacde6"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="号码归属地查询"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        android:onClick="searchPhoneBelong"
+        android:clickable="true"
+        android:drawableLeft="@android:drawable/ic_menu_camera"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#000000"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="手机短信一键备份"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        android:onClick="saveSms"
+        android:clickable="true"
+        android:drawableLeft="@android:drawable/ic_menu_camera" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#000000"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="手机短信一键还原"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        android:onClick="getbackSms"
+        android:clickable="true"
+        android:drawableLeft="@android:drawable/ic_menu_camera" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#000000"/>
+
+
+</LinearLayout>

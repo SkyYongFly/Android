@@ -1,0 +1,36 @@
+package com.example.view;
+
+import com.example.R;
+
+import android.app.Activity;
+import android.content.Context;
+import android.view.View;
+
+/**
+ * 购彩大厅的布局(中间显示部分，应用一加载的时候显示的内容)
+ * @author yzas
+ *
+ */
+public class HallView extends BaseView {
+	private Context context ;
+	private View view;
+	
+	public HallView(Context context) {
+		this.context = context;
+		view = initView();
+	}
+	
+	public  View initView(){
+		//这里不能使用上面的这种写法，会导致空指针异常，因为将context强行转为activity，
+		//是布局 和该activity并不是对应的，所以 在寻找布局时会导致空指针异常
+//		Activity activity = (Activity) context;
+//		return activity.findViewById(R.layout.hall_layout);
+		return View.inflate(context, R.layout.hall_layout,null);
+	}
+	
+	@Override
+	public View getView() {
+		return view;
+	}
+
+}

@@ -1,0 +1,51 @@
+package com.example.util;
+
+import java.io.StringWriter;
+
+import org.xmlpull.v1.XmlSerializer;
+
+import android.util.Xml;
+
+public class XmlBody {
+	
+
+	/**
+	 * 序列化body
+	 * 
+	 * @param serializer
+	 */
+	public void serializerBody(XmlSerializer serializer) {
+		try {
+			serializer.startTag(null, "body");
+			serializer.startTag(null, "elements");
+
+			XmlElement  element = new XmlElement();
+			element.serializerElement(serializer);
+
+			serializer.endTag(null, "elements");
+			serializer.endTag(null, "body");
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	/**
+	 * 获得序列化的body
+	 */
+	public String getBody() {
+		StringWriter writer = new StringWriter();
+		XmlSerializer serializer = Xml.newSerializer();
+		try {
+			serializer.setOutput(writer);
+			this.serializerBody(serializer);
+			serializer.flush();
+			return writer.toString();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return null;
+	}
+
+}

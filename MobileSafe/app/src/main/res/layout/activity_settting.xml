@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:uitest="http://schemas.android.com/apk/res/com.example.mobilesafe.mobilesafe"
+                xmlns:uitest2="http://schemas.android.com/apk/res/com.example.mobilesafe.mobilesafe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.example.mobilesafe.mobilesafe.SetttingActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/tv_setting"
+        android:text="设置中心"
+        android:textSize="30sp"
+        android:textColor="#ff3527ff"
+        android:background="#ff11ff98"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.example.ui.MySettingItem
+        android:id="@+id/settingUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        uitest:title2="是否打开自动更新"
+        uitest:cb_on="自动更新已经打开"
+        uitest:cb_off="自动更新已经关闭"
+        />
+    <com.example.ui.MySettingItem
+    android:id="@+id/settingComingPhone"
+    android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+    uitest:title2="是否打开来电归属地功能"
+    uitest:cb_on="来电归属地显示已经打开"
+    uitest:cb_off="来电归属地显示已经关闭"
+    />
+    <com.example.ui.MySettingItem
+        android:id="@+id/settingStopBlack"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        uitest:title2="是否一键拦截黑名单"
+        uitest:cb_on="拦截黑名单已经打开"
+        uitest:cb_off="拦截黑名单已经关闭"
+        />
+    <com.example.ui.MySettingItem
+        android:id="@+id/lockApp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        uitest:title2="是否打开应用程序锁"
+        uitest:cb_on="应用程序锁已经打开"
+        uitest:cb_off="应用程序锁已经关闭"
+        />
+    <com.example.ui.ClickableTextView
+        android:id="@+id/selectToastBackground"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        uitest2:title2="归属地提示框风格"
+        uitest2:cb_on="天蓝风格" />
+
+
+</LinearLayout>

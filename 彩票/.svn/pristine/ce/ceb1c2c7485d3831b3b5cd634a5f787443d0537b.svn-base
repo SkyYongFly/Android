@@ -1,0 +1,36 @@
+package com.example.util;
+
+import org.xmlpull.v1.XmlSerializer;
+
+import android.util.Log;
+
+/**
+ * 处理XML文件的中间的消息体
+ * @author yzas
+ *
+ */
+public class Message {
+
+	private static final String TAG = "tag";
+
+	public  static  void createMessage(XmlSerializer serializer){
+		try {
+			serializer.startTag(null, "message");
+			serializer.attribute(null, "version","1.0");//版本信息
+			
+			//处理头节点部分和body部分
+			XmlHeader header = new XmlHeader();
+			XmlBody body = new XmlBody();
+			String  bodyStr =  body.getBody();
+			Log.d(TAG,"body : "+bodyStr);
+			
+			header.serializerHeader(serializer,bodyStr);
+			body.serializerBody(serializer);
+			
+			serializer.endTag(null, "message");
+		} catch (Exception e) {
+			e.printStackTrace();
+		} 
+		
+	}
+}
